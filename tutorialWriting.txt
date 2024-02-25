@@ -1,2 +1,39 @@
+<Timestamp: 8:52.>
+
+
 --Why React?--
-Timestamp: 8:52.
+1. The way that it uses its virtual DOM is more efficient than vanilla JS.
+2. Reusable and clearer web components.
+3. It's maintained by facebook, so people are constantly looking after it.
+4. React is very hirable.
+
+React is a large framework, and you may not want to use it and download all its
+libraries if you are doing a small project.
+
+--ReactDOM & JSX--
+JSX is a javascript rendition of HTML. We need to import React from "react" because this
+enables JSX to be usable.
+
+** One way to set up React in a project is to have 3 script tags in the header (they 
+are in the index.html, so we can just copy these) and a type='text/babel' in the script
+tag that is in the body that has src='index.js'. Then we go into the index.js and do
+the:
+ReactDOM.render(<h1>hello world</h1>, document.getElementById("root")); 
+of course having a div in our index.html with the id of root.
+
+**^^^ The above way is the easy way to put react in, not the correct way.
+
+Here is the long way to create an element and have it go to the html page using JS:
+
+const h1 = document.createElement("h1")
+h1.textContent = "This is an imperative way to program"    // this is used rather than .innerHTML
+h1.className = "header"
+document.getElementById("root").append(h1)
+
+These lines of code are what we would write if we didn't have react. React allows us to
+write these same four lines of code by using JSX like in line 21. Or like this: 
+
+ReactDOM.render(<h1 className="header">Hello, React!</h1>, document.getElementById("root"));
+
+Remember, we must wrap all JSX that is going into the ReactDOM line into one element. This could
+just be wrapping everything into one neat div.
