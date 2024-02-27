@@ -52,6 +52,46 @@ This command created this folder, and a few files to start with. We have Tailwin
 
 
 
-----ACTUAL TUTORIAL NOTES------
-The making of this react app is done in scrimba unfortunately, but all the notes I do from that
-will be taken here.
+----ACTUAL TUTORIAL NOTES, FROM SOFTWARE SATURDAYS------
+
+--Lesson 3: Intermediate. JSX and ReactJS---
+JSX is HTML that can be placed in javascript.
+JSX syntax lets you create HTML stuff into javascript variables.
+
+To write JSX, just write some HTML and store it into a variable.
+
+const basicJSX = <p>hi</p>
+
+We deploy the JSX into the App.js in the return area like this:
+<div>{basicJSX}</div>
+
+To combine JS and HTML in JSX:
+let name = "john smith";
+const jsExample = <p>Hello {name}!</p>;
+
+Any JS can be put within the curly brackets. Even logic.
+Ternary operators are good too.
+
+
+You can use most HTML attributes in JSX, but the syntax
+is a lil diffy.
+const classMake = <p className='diffy'>Hmmm</p>;      // this is the only one that's different.
+const idMake = <p id='diffy2'>Hmmmmmm</p>;
+
+Styling can be added to JSX as well, same way as we would for normal HTML.
+Make sure to put the file into the src folder and have an import statement
+in the index.js top line.
+'./index.css';
+
+
+We can make custom JSX.
+If we have a group of tags we want to use over and over, we can
+make a custom HTML tag with JSX.
+This allows us to reuse JSX and HTML tags.
+
+It's good practice to have these custom tags in different files,
+but you can group them in the same file.
+
+**Look at component.js for details.
+
+<46:22, we boutta make our own component 2/27>
