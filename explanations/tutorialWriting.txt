@@ -49,3 +49,9 @@ Type this into the terminal:
   npm create vite@latest 'project-name' -- --template react
 This command created this folder, and a few files to start with. We have TailwindCSS in this.
 
+
+
+
+----ACTUAL TUTORIAL NOTES------
+The making of this react app is done in scrimba unfortunately, but all the notes I do from that
+will be taken here.
