@@ -1,0 +1,13 @@
+Learn React.JS in 90 Minutes - Build & Deploy a Gym App w. TailwindCSS
+link -> https://www.youtube.com/watch?v=v0SfUz-Zbyg&list=LL&index=3&t=149s
+
+<Timestamp 1:46>
+We typed into the terminal:
+  npm create vite@latest 'project-name' -- --template react
+This command created this folder, and a few files to start with. We have TailwindCSS in this.
+
+
+<Timestamp 2:42>
+Let's go over what deploys in the folder once we run this command.
+
+index.html
