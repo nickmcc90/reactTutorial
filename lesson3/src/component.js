@@ -1,8 +1,9 @@
 import React from 'react';
 
 export function Component() {
+    let miser = 5;
     return (
-      <p>Nick McCarroll</p>      
+      <p>Nick McCarroll {miser}</p>      
     );
 }
 

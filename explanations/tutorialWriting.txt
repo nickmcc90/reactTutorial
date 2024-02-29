@@ -87,7 +87,7 @@ in the index.js top line.
 We can make custom JSX.
 If we have a group of tags we want to use over and over, we can
 make a custom HTML tag with JSX.
-This allows us to reuse JSX and HTML tags.
+This allows us to reuse JSX and HTML tags. (This is called a component basically)
 
 It's good practice to have these custom tags in different files,
 but you can group them in the same file.

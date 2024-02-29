@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import { Component } from './component';
+import { whatever } from './practiceComponent';
 
 function App() {
   // base jsx
@@ -16,6 +17,7 @@ function App() {
   </div>
 
   );
+
 
   // practice JSX elements.
   const helloJSX = (
@@ -41,6 +43,9 @@ function App() {
 
         <div>{helloJSX}</div>
 
+        {/* deploying practice component */}
+        <nicksComponent/>
+
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -50,9 +55,11 @@ function App() {
           Learn React
         </a>
 
-        <Component />
-
+       <Component/>
+      
+       {whatever()}
       </header>
+
     </div>
   );
 }
