@@ -106,3 +106,46 @@ branch being a different lesson, and when you want to see certain lessons you ch
 that lesson. SO SICK.
 
 <13:52 Timestamp>
+
+ReactJS is a front-end JS framework, and it's purpose is so that when you make something,
+it doesn't have to all be JS where you are linking elements to javascript all the time.
+
+The main file (usually index.js) needs a ReactDOM.render() to work, which tells React to render
+components.
+
+All react components need a return function.
+
+By convention, all the code you want goes inside App.js, which could all be calls to components.
+Code goes into the component files too. We never modify index.js.
+Also, all custom components go in a component folder.
+
+It is possible to you ReactJS without JSX, but it is very unpopular.
+The code for the React component can modify the web page depending on
+the props given to it.
+
+PROPS 
+Props are a way to pass data from a parent component to a child component.
+Props can only be changed by the parent component.
+Props can be accessed from the parameters of the function component (child).
+We pass in props with the same syntax as html attributes. Ex: style='yes'.
+
+**
+make sure there is a node modules folder in the project. To do this, do 
+  npm i 
+instead of npm start to get the folder (i think. for this I just copied a folder I already had).
+**
+
+BACK TO PROPS
+We can access props from function components by saying props.'whatever'
+'whatever' is whatever the parent function assigns a value to in the App.js.
+Let's show an example.
+
+APP.JS (Let's say we have a component called Purdue)
+<Purdue year={2024}
+
+PURDUE.JS
+export function Purdue() {
+  props.year      <----- This is how we access the prop passed from the parent (App.js)
+}
+
+<Timestamp: 30:32>
