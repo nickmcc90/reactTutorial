@@ -13,6 +13,9 @@ export function whatever() {
   }
 
   return (
-    <p>Man, I wonder if miser will equal 100 or not.. miser ={miser}</p>
+    <>
+      <p>Man, I wonder if miser will equal 100 or not.. miser ={miser}</p>
+    </>
+
   );
 }

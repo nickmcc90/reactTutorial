@@ -95,3 +95,14 @@ but you can group them in the same file.
 **Look at component.js for details.
 
 <46:22, we boutta make our own component 2/27>
+
+**For some reason, I can't get the component code to be in a tag. Only a function call. Weird.
+
+
+--Lesson 4: More ReactJS--
+
+I downloaded the entire 2023-Spring-ReactJS folder. They made the repository with each
+branch being a different lesson, and when you want to see certain lessons you checkout
+that lesson. SO SICK.
+
+<13:52 Timestamp>
