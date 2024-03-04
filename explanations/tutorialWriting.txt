@@ -175,3 +175,40 @@ when the webpage is rendered.
 
 <timestamp: 55:03 We are going to explain how the button shows "hide" and "show" with the toggling
 and the states. Then we can continue with the video.>
+
+We use setState() to initially set the value of showDemo1 to false. Then, we have an arrow function
+that we call when we click the button to change the value of showDemo1. It uses the setShowDemo1 to
+the opposite of what it is, which now will be true. When the value is true, the button will say
+"hide" because the contents will be displayed. 
+The button controls the value of showDemo1, so we can have an JSX element that is underneath the
+button that only appears when the button is toggled. We do this by having a ternary operation in 
+the JSX element. If the button makes the value true, we display the components. If it is not true,
+we make the contents null, which makes them disappear.
+The button and the JSX are encapsulated in a overarching div called with an id of 'demo1'.
+
+Back to the video:
+In some practice, I passed a prop to a component.
+We passed in a timestamp to the info component from the card component.
+
+To add user interactivity to a button, we add the onClick attribute. I wonder if there's a way
+to .addEventListener in a component that takes a class from the button we want.
+
+Here is an example of an onclick with the use of useState():
+
+const [count, setCount] = useState(0);
+
+const clicked = () => {
+  setCount = count + 1
+}
+
+<button onClick={ clicked }>{ count }</button>
+
+
+Our next task is to do what he said before 1:20:42, which is:
+{
+Populate the header and info to make the card full. Put an update
+button to update the timestamp in the card.
+}
+
+For some reason my update button isn't working in the function.
+Figure out why next time.
