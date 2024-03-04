@@ -141,7 +141,7 @@ We can access props from function components by saying props.'whatever'
 Let's show an example.
 
 APP.JS (Let's say we have a component called Purdue)
-<Purdue year={2024}
+<Purdue year={2024} />
 
 PURDUE.JS
 export function Purdue() {
@@ -149,3 +149,29 @@ export function Purdue() {
 }
 
 <Timestamp: 30:32>
+
+For this example, go to lesson 4, in the checkpoint folder 4. I learned that we can make two components, then put them
+inside another component. Then put that final component into App.js.
+
+Like a header and info tag into a card tag, and then the card tag put into the app.js. Anything that can be repeated should
+be its own component such that it can be reused again and again.
+
+
+REACTJS HOOKS
+This replaces the old class based component methodology.
+Hooks give us a way to "hook" into the state and lifecycle of a component.
+
+Our first hook: useState()
+Sets the state and creates a function to update the state for a variable.
+When the state of the variable is updated using its set function, that change
+is reflected anywhere the variable is referenced.
+
+>>import { useState } from "react";
+>>const [var, setVar] = useState(initialValue);
+
+Another hook: useEffect()
+As a teaser trailer to what this hook does, it allows whatever's inside it to only run once
+when the webpage is rendered.
+
+<timestamp: 55:03 We are going to explain how the button shows "hide" and "show" with the toggling
+and the states. Then we can continue with the video.>
