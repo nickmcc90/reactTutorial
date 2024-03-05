@@ -150,7 +150,7 @@ export function Purdue() {
 
 <Timestamp: 30:32>
 
-For this example, go to lesson 4, in the checkpoint folder 4. I learned that we can make two components, then put them
+For this example, go to checkpoint4 I learned that we can make two components, then put them
 inside another component. Then put that final component into App.js.
 
 Like a header and info tag into a card tag, and then the card tag put into the app.js. Anything that can be repeated should
@@ -195,10 +195,12 @@ to .addEventListener in a component that takes a class from the button we want.
 
 Here is an example of an onclick with the use of useState():
 
+REMEMBER, THE SETTER VARIABLE GETS CHANGED WITH (), NOT EQUALS SIGN!!!!
+
 const [count, setCount] = useState(0);
 
 const clicked = () => {
-  setCount = count + 1
+  setCount(count + 1)
 }
 
 <button onClick={ clicked }>{ count }</button>
@@ -212,3 +214,27 @@ button to update the timestamp in the card.
 
 For some reason my update button isn't working in the function.
 Figure out why next time.
+
+
+---Lesson 5: APIs and ReactJS---
+<Timestamp: 11:30>
+
+Our next hook: useEffect()
+It does something right after a component has loaded and when one of
+the specified dependencies is modified.
+>> import { useEffect } from 'react'
+>> useEffect(effectFunction, dependencies)
+Basically everytime a value in dependencies changes, useEffect is triggered and
+will run the effectFunction.
+
+**By the way, anyonomous functions are functions without names that we use
+inline. We know this already, such as:
+array.forEach((value, index) => {
+ blah blah blah
+})
+
+useEffect will run everytime a component loads or unloads
+It seems like it runs the code inside useEffect when something is loaded,
+and runs the return statement when something is unloaded.
+
+<timestamp: 21:46>

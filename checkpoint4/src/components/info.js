@@ -5,13 +5,13 @@ export function Info(props) {
 
     // TODO: create a timestamp useState() variable with initial value set
     // to the timestamp attribute from props
-    let [Timestamp, setTimestamp] = useState(props.timestamp);
+    const [timestamp, setTimestamp] = useState(props.timestamp);
     
     
     const updateTimestamp = () => {
       // TODO: update the timestamp with the current date and time. 
       // Use (new Date()).toISOString() to get the current date and time.
-      setTimestamp = (new Date()).toISOString();
+      setTimestamp((new Date()).toISOString());
       console.log('hello?')
       
     }
@@ -46,7 +46,7 @@ export function Info(props) {
           </p>
         </div>
         <div id="timestamp">
-          Loaded at {/* TODO: replace this comment with the timestamp variable */} {Timestamp}
+          Loaded at {/* TODO: replace this comment with the timestamp variable */} {timestamp}
         </div>
 
         <div id="button-container">
