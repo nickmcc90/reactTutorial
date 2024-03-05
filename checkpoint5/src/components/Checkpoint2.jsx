@@ -20,13 +20,18 @@ export default function Checkpoint2() {
 
         // TODO: Map the pokemon to cards
 
+        const newCards = responsePokemon.map((name) => <Card pokemon={name} />)   // these made cards are stored as a list in newCards....
+        // This right here is compling an indefinite amount of cards, whatever the api has.
+
         // TODO: Set pokemonCards to the mapped cards 
+        setPokemonCards(newCards);
     }
 
     useEffect(() => {
         // get api data
         getAPIData()
-    }, [])
+    }, [])      // we need this empty array here to show that there will be nothing to depend on to run this function again.
+
 
     return (
         <div >

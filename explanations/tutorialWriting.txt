@@ -238,3 +238,48 @@ It seems like it runs the code inside useEffect when something is loaded,
 and runs the return statement when something is unloaded.
 
 <timestamp: 21:46>
+
+LISTS AND MAPS
+The JS map() function creates an array by running a function
+on another array.
+
+let mapOutput = someArray.map((element) => element * 2);
+
+We can use the map() function to create a list of JSX elements to display.
+This means we can create an indefinite number of elements in components if
+we need something like that.
+
+This comes in handy in Demo2 (check there, but here is a synopsis.)
+We expect a prop named numbers to be passed in. Since the user can input
+any amount for this, we use the map function to make a bullet point for however
+many numbers there are. Here it is if you are too lazy:
+
+import React from 'react';
+
+export function Demo12() {
+  const thisList = props.numbers.map((number) => <li>{ number  }</li>);
+
+  const returner = <ul>{ thisList }</ul>;
+
+  return returner;
+}
+
+Checkpoint1 in folder checkpoint5: use the map function to map each pokemon to a card.
+P easy.
+
+APIs
+Its a software intermediary that allows two applications to talk to one another.
+Web-based APIs have standardized on using JSON (JS object notation) to send data using
+key-value pairs.
+
+REACT AND APIs
+Data from an API can be mapped onto React components.
+This allows us to create a user interface that will change depending
+on the data we receive.
+
+Demo3 shows a good example of an API call. Look there real quick.
+
+Any notes on this are substituted by looking at Demo3 in folder lesson5 and checkpoint2 in
+folder checkpoint5.
+
+<1:04:47 about to see how the guy does checkpoint2, it'll be review>
