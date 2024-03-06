@@ -283,3 +283,51 @@ Any notes on this are substituted by looking at Demo3 in folder lesson5 and chec
 folder checkpoint5.
 
 <1:04:47 about to see how the guy does checkpoint2, it'll be review>
+
+--Lesson 6: Intermediate Javascript--
+<timestamp 2:36>
+
+---FUNCTIONAL COMPONENTS---
+We can have functions inside the App.js document before putting code inside the function App()
+return block. These functions can be called inside the function App() space as we would before,
+like <Example />. They are their own tags. We can pass props through to them too.
+
+---IMPORTS AND EXPORTS---
+When we say export, we are making a module that can be shipped out.
+When we say import, we are pulling modules.
+
+There are two types of exports:
+Named exports (0 to infinite per file)
+These have to be imported with the same name, you have to put curly brackets around it.
+When calling it after importing it, you need to put curly brackets around it too.
+
+
+Default exports (max 1 per file)
+These can be imported with any name. It could be anything, and you don't have to put
+curly brackets around it. Whatever you call it in the import has to be consistent 
+with the way you call it in the script <sameName />.
+
+function yep() {
+
+}
+
+export default yep;
+
+**Look at lesson3 folder and see if you can figure out that issue with this.
+**It works, I just copy and pasted the one that worked.
+
+Now, we are going to make a blog with posts, comments, and avatars components. This will be in 
+checkpoint6. Store these three components in a file and use named exports to import them in your
+App.js file.
+Let's remove the code we don't need: 
+We can toss everything out of the public folder except for favicon.ico and index.html. 
+We can toss everything out of the src folder except for App.js and index.js.
+Go into App.js and remove the imports at the top.
+Go into App.js and remove the stuff inside the return statement and replace it with
+a react fragment <> </>.
+Go into index.js and remove the reportWebVitals and comments. Also remove the unused
+imports.
+Run hello world in the app return statement to check that it works.
+Make a components folder inside src folder and reference those in your App.js.
+
+<timestamp 26:09 start checkpoint>

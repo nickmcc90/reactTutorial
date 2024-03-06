@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import { Component } from './component';
-import { whatever } from './practiceComponent';
+import { Components } from './practiceComponent';
 
 function App() {
   // base jsx
@@ -56,8 +56,10 @@ function App() {
         </a>
 
        <Component/>
+       <Component />
+       <Components />
       
-       {whatever()}
+
       </header>
 
     </div>
