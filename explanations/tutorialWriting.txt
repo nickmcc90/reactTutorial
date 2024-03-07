@@ -331,3 +331,13 @@ Run hello world in the app return statement to check that it works.
 Make a components folder inside src folder and reference those in your App.js.
 
 <timestamp 26:09 start checkpoint>
+
+Lessons:
+For our components, we can make a "something.jsx" file with the .jsx ending instead of the
+.js ending to preimport the react capabilities.
+You have to import pictures in react.
+I don't know why react is runtime erroring when I update a state variable in a functional
+component.
+
+--ASYNCHRONOUS CODE--
+<52:01>

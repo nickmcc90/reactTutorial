@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
 import {  Post, Comment, Avatar } from './components/component';
+import leopard from './images/leopard.jpeg';
 
 function App() {
   return (
     <>
-      Hello World!
       <Post animal="leopards"/>
-      <Comment number={12} animal="leopards"/>
-      <Avatar />
+      <Avatar image={leopard} alt="Supposed-to-be-a-leopard-here"/>
+      <Comment number={16} animal="leopards" user="nick"/>
     </>
   );
 }
