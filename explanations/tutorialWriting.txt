@@ -341,3 +341,23 @@ component.
 
 --ASYNCHRONOUS CODE--
 <52:01>
+Asynchronous code does not run at the same time as other code.
+PROMISES
+Promise functions immediately return with the promise to call some
+other function when they finish. I think a promise is an
+asynchronous function.
+
+USING PROMISES
+Call the promise function
+Attach success callbacks with .then()
+Attach failure callbacks with .catch()
+
+Promise callbacks can be 'chained' using multiple promise functions.. the
+fetch() function requires this
+
+ASYNC/AWAIT
+We can make async code sync again!
+Labeling a function async allows us to use await
+and turn other async function calls into sync func calls.
+Wrap the 'await' function call in a try-catch to emulate the
+catch() from earlier.
