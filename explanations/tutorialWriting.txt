@@ -361,3 +361,12 @@ Labeling a function async allows us to use await
 and turn other async function calls into sync func calls.
 Wrap the 'await' function call in a try-catch to emulate the
 catch() from earlier.
+
+A promise returns a value that can be used as a parameter in the
+.then and .catch callbacks.
+Demo3 in lesson 6 does this well.
+
+Checkpoint2: Somehow update the blog components from Checkpoint1
+to pull data from the PokeAPI.
+In the App.js file, use a Promise without async/await to get
+data and pass it to the components of the blog.
