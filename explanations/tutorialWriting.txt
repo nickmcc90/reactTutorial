@@ -370,3 +370,12 @@ Checkpoint2: Somehow update the blog components from Checkpoint1
 to pull data from the PokeAPI.
 In the App.js file, use a Promise without async/await to get
 data and pass it to the components of the blog.
+
+I don't know how to do this. We should figure out how to get item urls.
+Component.jsx from checkpoint6 has info that isn't finished, trying to get
+a url from another url.
+
+
+
+
+---Lesson 7: NoSQL Databases---
