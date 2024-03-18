@@ -379,3 +379,25 @@ a url from another url.
 
 
 ---Lesson 7: NoSQL Databases---
+
+Databases. Amazon has a database of products, youtube has a database of videos.
+
+For many years, Structured Query Langauge was the standard for database programs.
+It used a table approach where databases consist of tables with columns representing fields.
+
+However, lots of data doesn't make sense to store in a rigid table. SQL can be slower for web applications
+and harder to distribute. So we can use NoSQL.
+
+NoSQL is a very fast database. There is a lot of different ones, but we will use a Firebase Realtime Database.
+
+FIREBASE 
+Firebase is a google development system used for prototyping and small applications.
+
+Realtime Database stores things using a JSON structure. Everything must be a key-value pair
+or a key-JSON pair. Javascript handles JSON well.
+
+SETTING UP A FIREBASE ACCOUNT
+1. Go to https://firebase.com and click "Go to console" in the upper right corner.
+2. In the center of the screen, press "create a project" or add project. Give the project
+a name and press continue. Deselect "Enable Goggle Analytics" and press create project.
+<timestamp: 5:45>
