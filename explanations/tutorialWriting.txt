@@ -399,5 +399,77 @@ or a key-JSON pair. Javascript handles JSON well.
 SETTING UP A FIREBASE ACCOUNT
 1. Go to https://firebase.com and click "Go to console" in the upper right corner.
 2. In the center of the screen, press "create a project" or add project. Give the project
-a name and press continue. Deselect "Enable Goggle Analytics" and press create project.
+a name and press continue. Deselect "Enable Google Analytics" and press create project.
 <timestamp: 5:45>
+3. After project creation, on the left, click "build" and go to "realtime database"
+4. Click "create database" and then "Next". Select start in "test mode"
+and press "enable"
+5. On the left, press the setting gear and select project settings.
+6. In the "your apps" section, choose a new website.
+7. Give your website a nickname and press "Register app".
+Select "Use NPM" under "Add Firebase SDK". Copy the code in the
+box and paste it somewhere for reference if you don't need it now.
+
+This is pretty much all there is to setting up firebase!
+
+SECURITY
+Don't put this on the web while the settings show "test mode"!
+Look into firebase rules for permissions after making the app.
+
+-----------------
+npm install firebase
+-----------------
+
+--------------------
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyCFXQy_l26cVpfdAdaLFdUvJ6adwRxRHBU",
+  authDomain: "pokedexapp-2540c.firebaseapp.com",
+  databaseURL: "https://pokedexapp-2540c-default-rtdb.firebaseio.com",
+  projectId: "pokedexapp-2540c",
+  storageBucket: "pokedexapp-2540c.appspot.com",
+  messagingSenderId: "793316458362",
+  appId: "1:793316458362:web:585027c696225361f960c3"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+--------------------
+
+It's good to have a database.js file for this firebase data.
+
+import { initializeApp } from "firebase/app";
+import { getDatabase } from 'firebase/database';
+
+const app = initializeApp(firebaseConfig);
+
+const database = getDatabase(app);
+export { database };
+
+It is important for databases to have CRUD capabilities...
+C - create and store data
+R - read available data
+U - update existing data
+D - delete existing data
+
+Proper web apps must follow these rules.
+
+We should..
+import { ref } from 'firebase/database';
+.. so that we can reference things like this..
+const dataRef = ref(database, '/path/to/data');
+
+
+CREATING DATA IN FIREBASE
+After importing the database and creating a reference...
+1. Import the set() method from 'firebase/database'
+set('the ref', 'data to store that ref') // set takes two parameters
+
+READING DATA IN FIREBASE
+1. Import the onValue() method from 'firebase/database'
+<timestamp: 13:34>
