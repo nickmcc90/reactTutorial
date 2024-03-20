@@ -473,3 +473,23 @@ set('the ref', 'data to store that ref') // set takes two parameters
 READING DATA IN FIREBASE
 1. Import the onValue() method from 'firebase/database'
 <timestamp: 13:34>
+onValue(reference, callback-function)
+onValue will run the callback function every time the ref is updated.
+
+UPDATING DATA IN FIREBASE
+update()
+Get it from 'firebase/database'
+update(reference, data-to-update-the-ref)
+
+DELETING DATA IN FIREBASE
+remove()
+Get it from 'firebase/database'
+remove(ref) //only one parameter
+
+DIFFERENCES IN UPDATING
+set() vs update()
+set() is destructive and overwrites data
+update() merges and has additive properties.
+
+Don't forget to type npm i firebase (i also brings the node modules in too)
+<timestamp 20:13>
