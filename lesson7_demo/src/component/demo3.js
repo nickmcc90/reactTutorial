@@ -1,9 +1,12 @@
 //import { database } from '@/database.js';
 import { database } from '../database.js';
 import { onValue, ref, off } from 'firebase/database';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 export default function Demo3() {
+
+    const [data, setData] = useState()
+
     useEffect(() => {
         const dataRef = ref(database, '/');
         onValue(dataRef, (snap) => {
@@ -12,6 +15,7 @@ export default function Demo3() {
             //     print it to the console. Your data reads
             //     will use a similar loop, but probably
             //     not two of them
+            setData(snap.val())
             for(let key in snap.val()) {
                 console.log(key, ':');
                 for(let sub_key in snap.val()[key]) {
@@ -32,7 +36,9 @@ export default function Demo3() {
     <div>
         <h1>Software Saturdays</h1>
         <h2>Lesson 7, Demo 3</h2>
-        <h3>Check your browser console!</h3>
+        <li>
+          {data ? Object.keys(data).map((key) => <ul>{key}</ul>) : null}
+        </li>
     </div>
     );
 

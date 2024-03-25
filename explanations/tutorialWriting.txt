@@ -495,3 +495,7 @@ Don't forget to type npm i firebase (i also brings the node modules in too)
 <timestamp 20:13>
 I looked at the code for CRUD in demo 2, I need to do some messing around with it.
 <timestamp 30:25>
+
+snap.val() lets you access data inside of a reference of data at a given point in time.
+
+TIME FOR THE PROJECT!!
